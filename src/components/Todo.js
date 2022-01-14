@@ -4,6 +4,7 @@ const Todo = ({ text, todo, todos, setTodos, setEditTodo }) => {
   // Events
   const deleteHandler = () => {
     setTodos(todos.filter(el => el.id !== todo.id))
+    setEditTodo("")
   }
 
   const completedHandler = () => {
